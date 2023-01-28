@@ -1,11 +1,10 @@
 import React from 'react'
-import { productsArray } from '../json/products'
 import Product from './Product'
-
-const Products = () => {
-  const productsToDisplay = productsArray.slice(19, 25); // display only first 10 products
+import { productsArray } from '../json/products';
+const Featured = () => {
+  const productsToDisplay = productsArray.slice(0, 6).sort(() => Math.random() - 0.5);
   return (
-    <>
+    <div>
       <div className="ProductsCards SliderCards">
         {productsToDisplay.map((product) => (
           <li key={product.id}>
@@ -19,9 +18,8 @@ const Products = () => {
           </li>
         ))}
       </div>
-    </>
-  );
-};
+    </div>
+  )
+}
 
-
-export default Products
+export default Featured

@@ -6,6 +6,7 @@ import Product from './Product';
 import { Link } from 'react-router-dom';
 import Category from './Category';
 const SearchBar = () => {
+
     const uniqueList = [...new Set(productsArray.map((curr) => { return curr.mainCategory; }),"All")];
     const [catList, setCatList] = useState(uniqueList);
     console.log(uniqueList)
@@ -39,11 +40,15 @@ const SearchBar = () => {
     const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
 
     const filterItem = (category) =>{
+    if(category === "All"){
+        setSearchResults(productsArray);
+    }else{
         const updatedList = productsArray.filter((currEle)=>{
             return currEle.mainCategory === category;
         })
         setSearchResults(updatedList)
     }
+}
     return (
         <>
             <div className="formNavbar">
@@ -53,25 +58,27 @@ const SearchBar = () => {
                         <h6> by Avez Qureshi </h6>
                     </div>
                 </Link>
-                <form onSubmit={handleSubmit}>
+                <form className='formSearch' onSubmit={handleSubmit}>
                     <input
                         class='one'
                         type="text"
-                        placeholder="Search by title, price, mainCategory or commonCategory"
+                        placeholder="Search by Products, Category , Specification..."
                         value={searchTerm}
                         onChange={handleSearch}
                         onKeyDown={handleKeyDown}
                     />
                     <button className='one cur' type="submit">Search</button>
                 </form>
-                <div class="profile_avez cur one">
-                    <div class="profile_image">
-                        <i class='bx bx-user'></i>
-                    </div>
-                    <div class="profile_name">
-                        Avez
-                    </div>
-                </div>
+                <Link to='/login' >
+                    <div class="profile_avez cur one">
+                        <div class="profile_image">
+                        <i class='bx bx-user'></i>  
+                        </div>
+                        <div class="profile_name">
+                          Hello !
+                        </div>
+                        </div>
+                        </Link>
                 <Link to='/cart' >
 
                     <div class="cart_avez cur">

@@ -21,17 +21,19 @@ const Navbar = () => {
                    <Link to='/products' > <input
                       class="one clickProp"
                       type="text"
-                      placeholder="Search by title, price, mainCategory or commonCategory"
+                      placeholder="Search by Products, Category , Specification..."
                     /></Link>
                     </div>
+                    <Link to='/login' >
                     <div class="profile_avez cur one">
                         <div class="profile_image">
-                            <i class='bx bx-user'></i>
+                        <i class='bx bx-user'></i>  
                         </div>
                         <div class="profile_name">
-                            Avez
+                          Hello !
                         </div>
-                    </div>
+                        </div>
+                        </Link>
                 <Link to='/cart' >
 
                     <div class="cart_avez cur">

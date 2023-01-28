@@ -5,6 +5,7 @@ import { productsArray } from '../json/products';
 import Navbar from '../components/Navbar'
 import { CartContext } from '../context/CartContext';
 import Product from './Product';
+import Featured from './Featured';
 
 const ProductDetail = () => {
 
@@ -59,17 +60,7 @@ const ProductDetail = () => {
       <section class="featuredProducts" >
         <h2>Featured Products</h2>
         <div className="ProductsCards SliderCards">
-          {productsToDisplay.map((product) => (
-            <li key={product.id}>
-              <Product
-                id={product.id}
-                title={product.title}
-                description={product.description}
-                image={product.image}
-                price={product.price}
-              />
-            </li>
-          ))}
+            <Featured/>
         </div>
       </section>
     </>

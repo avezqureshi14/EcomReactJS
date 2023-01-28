@@ -7,77 +7,58 @@ const LeftHome = () => {
     <div class="category_content_avez sha back_avez">
         <ul class="">
             <li>
+                <h3>Our Happy Customers 😊 </h3>
+            </li>
+            <li>
                 <div class="cat_cont cur">
-                    Traditional Wear
+                    Amazing Experience on the site 😊😊
                 </div>
                 <div class="cat_icon cur">
-                    <i class='bx bxs-right-arrow'></i>
                 </div>
             </li>
             <li>
                 <div class="cat_cont cur">
-                    Traditional Wear
+                    Got the best products 💖💖
                 </div>
                 <div class="cat_icon cur">
-                    <i class='bx bxs-right-arrow'></i>
                 </div>
             </li>
             <li>
                 <div class="cat_cont cur">
-                    Traditional Wear
+                    Amazing Qualtiy 🤘🎉
                 </div>
                 <div class="cat_icon cur">
-                    <i class='bx bxs-right-arrow'></i>
                 </div>
             </li>
             <li>
                 <div class="cat_cont cur">
-                    Traditional Wear
+                    You have amazing variety of products 🎉
                 </div>
                 <div class="cat_icon cur">
-                    <i class='bx bxs-right-arrow'></i>
                 </div>
             </li>
             <li>
                 <div class="cat_cont cur">
-                    Traditional Wear
+                    Products quality is amazing 👍👍👍👍
                 </div>
                 <div class="cat_icon cur">
-                    <i class='bx bxs-right-arrow'></i>
                 </div>
             </li>
             <li>
                 <div class="cat_cont cur">
-                    Traditional Wear
+                    How one can keep so much amazing products all on one site, Hats of to you sir :))  
                 </div>
                 <div class="cat_icon cur">
-                    <i class='bx bxs-right-arrow'></i>
                 </div>
             </li>
             <li>
                 <div class="cat_cont cur">
-                    Traditional Wear
+                    You have amazing build quality, Won my trust 👍🎉
                 </div>
                 <div class="cat_icon cur">
-                    <i class='bx bxs-right-arrow'></i>
                 </div>
             </li>
-            <li>
-                <div class="cat_cont cur">
-                    Traditional Wear
-                </div>
-                <div class="cat_icon cur">
-                    <i class='bx bxs-right-arrow'></i>
-                </div>
-            </li>
-            <li>
-                <div class="cat_cont cur">
-                    Traditional Wear
-                </div>
-                <div class="cat_icon cur">
-                    <i class='bx bxs-right-arrow'></i>
-                </div>
-            </li>
+         
         </ul>
     </div>
 </div>

@@ -6,7 +6,7 @@ const Category = ({filterItem, catList}) => {
     <>
     <div class="categories_avez">
     <ul>
-       <li id="reload-button" class="one cur">All</li> 
+       <li id="reload-button" onClick={()=>filterItem("All")}  class="one cur">All</li> 
         {
             catList.map((currEle)=>{
                 return (

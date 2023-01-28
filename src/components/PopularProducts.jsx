@@ -2,7 +2,7 @@ import React from 'react'
 import { productsArray } from '../json/products';
 import Product from './Product';
 const PopularProducts = () => {
-    const productsToDisplay = productsArray.slice(0, 6); // display only first 10 products
+    const productsToDisplay = productsArray.slice(10, 16); // display only first 10 products
   return (
     <>
     <section class="featuredProducts" >

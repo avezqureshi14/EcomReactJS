@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Products from './Products'
 const Deals = () => {
   const [timeLeft, setTimeLeft] = useState(20 * 60 * 60 * 1000);
@@ -32,7 +33,7 @@ const Deals = () => {
         <h2>Deals of the Day</h2> <h1>|</h1> <h3>Sale ends in 2 days !!!</h3>
     </div>
     <div class="dealsDetails">
-        <h4>View More Deals <i class='bx bxs-right-arrow'></i> </h4>
+       <Link to='/products' > <h4>View More Deals <i class='bx bxs-right-arrow'></i> </h4></Link> 
     </div>
 </div>
 
